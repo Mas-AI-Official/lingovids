@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useState } from 'react';
 import axios from 'axios';
 
@@ -23,7 +23,7 @@ export default function Register() {
       alert(response.data.message);
       window.location.href = '/auth/login';
     } catch (error) {
-      setError('Registration failed: ' + ((error as any).response?.data?.error || (error as any).message));
+      setError('Registration failed: ' + (error.response?.data?.error || error.message));
     }
   };
 

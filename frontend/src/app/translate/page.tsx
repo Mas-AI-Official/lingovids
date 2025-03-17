@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useState } from 'react';
 import axios from 'axios';
 
@@ -17,11 +17,7 @@ export default function Translate() {
       });
       alert('Translation started: ' + response.data.message);
     } catch (error) {
-      if (axios.isAxiosError(error)) {
-        alert('Error: ' + (error.response?.data?.error || error.message));
-      } else {
-        alert('Error: ' + error);
-      }
+      alert('Error: ' + (error.response?.data?.error || error.message));
     } finally {
       setLoading(false);
     }
