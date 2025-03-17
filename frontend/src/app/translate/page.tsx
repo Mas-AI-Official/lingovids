@@ -1,6 +1,6 @@
 ﻿'use client';
 import { useState } from 'react';
-import axios from 'axios';
+import axios, { AxiosError } from 'axios';
 
 export default function Translate() {
   const [videoUrl, setVideoUrl] = useState('');
@@ -17,7 +17,8 @@ export default function Translate() {
       });
       alert('Translation started: ' + response.data.message);
     } catch (error) {
-      alert('Error: ' + (error.response?.data?.error || error.message));
+      const errorMessage = axios.isAxiosError(error) ? (error.response?.data as { error: string })?.error || error.message : (error as Error).message;
+      alert('Error: ' + errorMessage);
     } finally {
       setLoading(false);
     }
