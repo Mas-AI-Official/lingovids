@@ -26,7 +26,7 @@ function Translate() {
         e.preventDefault();
         setLoading(true);
         try {
-            const response = yield axios_1.default.post($, { process, : .env.NEXT_PUBLIC_API_URL } / api / videos / translate, {
+            const response = yield axios_1.default.post(`${process.env.NEXT_PUBLIC_API_URL}/api/videos/translate`, {
                 videoUrl,
                 language,
             });

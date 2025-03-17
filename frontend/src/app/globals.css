@@ -1,20 +1,20 @@
-﻿@layer base {
-body {
-  @apply font-sans text-base text-gray-900;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply antialiased;
+  }
 }
 
 @layer components {
-button {
-  @apply transition duration-300;
-}
+  .btn {
+    @apply px-4 py-2 rounded-md transition duration-200 ease-in-out;
+  }
 
-input,
-select {
-  @apply border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 rounded p-2 w-full;
-}
-}
-
-@layer utilities {
-/* Add any custom utilities if needed */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 }
