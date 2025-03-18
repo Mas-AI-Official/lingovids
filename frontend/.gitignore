@@ -65,7 +65,6 @@ __pycache__/
 venv/
 env/
 .env
-*.json
 firebase-service-account.json
 google-cloud-key.jason
 tts-service-key.jason
@@ -76,9 +75,11 @@ Compute Engine API.jason
 irebase-auth-key.jason
 google-service-account.jason
 .env.local
-
+app.yaml
 
 secrets
 
 
 
+
+.vercel

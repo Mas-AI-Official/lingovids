@@ -1,0 +1,16 @@
+﻿{
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/nextjs",
+      "config": { "zeroConfig": true }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "frontend/"
+    }
+  ]
+}
