@@ -1,0 +1,25 @@
+# Project Description
+
+The `lingovids-mas-ai` project is designed to provide a video translation service under the MAS-AI initiative. It includes the following components:
+
+- **Component 1**: Video upload and processing
+- **Component 2**: Language translation and subtitle generation
+- **Component 3**: User authentication and management
+
+The project aims to facilitate the translation of videos into multiple languages, making content accessible to a wider audience.
+
+## Setup Instructions
+
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Create a `.env` file with the following variables:
+   ```
+   PORT=your_port_number
+   MONGO_URI=your_mongodb_uri
+   ```
+4. Start the server using `npm start`.
+
+## Troubleshooting
+
+- Ensure MongoDB is running and the URI is correct.
+- Check for any errors in the terminal and follow the error messages to resolve issues.
