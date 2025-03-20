@@ -1,21 +1,6 @@
-/* Ensure Tailwind CSS is installed and configured correctly */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
-@layer base {
-  html {
-    @apply scroll-smooth;
-  }
-  body {
-    @apply antialiased;
-  }
+body {
+  font-family: Inter, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
 }
-
-@layer components {
-  .btn {
-    @apply px-4 py-2 rounded-md transition duration-200 ease-in-out;
-  }
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
