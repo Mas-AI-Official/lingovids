@@ -1,3 +1,6 @@
+
+
+
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -12,7 +15,9 @@
 
 # testing
 
+
 # next.js
+
 
 # production
 
@@ -31,15 +36,21 @@ yarn-error.log*
 .env.local
 # vercel
 .vercel
+# .gitignore
 
+
+.env
+.env.local
+*.log
+*.lock
 # typescript
 *.tsbuildinfo
+
 
 # Ignore large Next.js SWC files
 node_modules/
 *.node
 *.node_modules
-
 # Ignore environment files
 .env
 .env.local
@@ -47,16 +58,21 @@ node_modules/
 .env.development
 
 # Ignore Node.js dependencies (Frontend)
+
 npm-debug.log
 yarn.lock
 
 # Ignore Python dependencies (Backend)
+=======
 *.pyc
 *.pyo
 venv/
 env/
+.env
+<<<<<<< HEAD
 
-# Service account keys
+=======
+>>>>>>> 66369b4 ( Initial Backend Commit)
 firebase-service-account.json
 google-cloud-key.json
 tts-service-key.json
@@ -64,23 +80,32 @@ Cloud Build API.json
 Cloud Identity-Aware Proxy
 Cloud Run API.json
 Compute Engine API.json
-firebase-auth-key.json
+irebase-auth-key.json
 google-service-account.json
+<<<<<<< HEAD
 
-# App configuration
 app.yaml
-
-# Build and node_modules directories
+=======
+.env.local
 node_modules/
 .next/
 dist/
 frontend/node_modules/
 backend/node_modules/
 main-site/node_modules/
-
-# Logs and locks
 *.log
 *.lock
+.env
 
-# Secrets
+
+
+>>>>>>> 66369b4 ( Initial Backend Commit)
 secrets
+
+
+
+<<<<<<< HEAD
+
+.vercel
+=======
+>>>>>>> 66369b4 ( Initial Backend Commit)
