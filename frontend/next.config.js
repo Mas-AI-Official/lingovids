@@ -1,5 +1,7 @@
 module.exports = {
+  reactStrictMode: true,
+  output: "standalone",
   env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
+    API_URL: "https://lingovids.mas-ai.co/api",
   },
 };
