@@ -1,12 +1,12 @@
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {}, // Removed deprecated options
+  experimental: {},
   eslint: {
-    ignoreDuringBuilds: true, // Ignore ESLint errors during build
+    ignoreDuringBuilds: true,
   },
   env: {
     NEXT_PUBLIC_API_URL: "https://lingovids.mas-ai.co/api",
+    NEXT_PUBLIC_GOOGLE_API_KEY: process.env.NEXT_PUBLIC_GOOGLE_API_KEY,
   },
 };
-
 module.exports = nextConfig;
