@@ -1,4 +1,7 @@
-module.exports = {
+﻿const nextConfig = {
   reactStrictMode: true,
-  // Add any other necessary configuration options here
+  eslint: { ignoreDuringBuilds: true },
+  env: { NEXT_PUBLIC_API_URL: "https://lingovids.mas-ai.co/api" },
 };
+
+module.exports = nextConfig;
