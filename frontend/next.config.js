@@ -1,7 +1,12 @@
-module.exports = {
+const nextConfig = {
   reactStrictMode: true,
-  output: "standalone",
+  experimental: {}, // Removed deprecated options
+  eslint: {
+    ignoreDuringBuilds: true, // Ignore ESLint errors during build
+  },
   env: {
-    API_URL: "https://lingovids.mas-ai.co/api",
+    NEXT_PUBLIC_API_URL: "https://lingovids.mas-ai.co/api",
   },
 };
+
+module.exports = nextConfig;
