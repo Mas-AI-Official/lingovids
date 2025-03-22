@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "public": true,
   "builds": [],
-  "routes": [
-    { "src": "/(.*)", "dest": "/" }
-  ]
+  "routes": [{ "src": "/(.*)", "dest": "/" }]
 }
