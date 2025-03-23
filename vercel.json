@@ -1,16 +1,7 @@
-{
+﻿{
   "version": 2,
   "public": true,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ]
+  "env": {
+    "NEXT_PUBLIC_API_URL": "https://lingovids-backend-454706184716.us-central1.run.app/api"
+  }
 }
