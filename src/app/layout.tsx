@@ -2,7 +2,7 @@ import React from "react";
 
 export const metadata = {
   title: "LingoVids",
-  description: "Multilingual Video Platform",
+  description: "LingoVids Platform",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
