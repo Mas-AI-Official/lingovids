@@ -38,7 +38,7 @@
     "mongoose": "^8.12.1",
     "motion-dom": "^12.5.0",
     "motion-utils": "^12.5.0",
-    "next": "^15.2.3",
+    "next": "^15.5.19",
     "next-auth": "^4.24.11",
     "oauth": "^0.9.15",
     "object-hash": "^2.2.0",
