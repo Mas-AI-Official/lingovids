@@ -35,7 +35,7 @@
     "mime-db": "^1.52.0",
     "mime-types": "^2.1.35",
     "mini-svg-data-uri": "^1.4.4",
-    "mongoose": "^8.12.1",
+    "mongoose": "^8.24.1",
     "motion-dom": "^12.5.0",
     "motion-utils": "^12.5.0",
     "next": "^15.2.3",
